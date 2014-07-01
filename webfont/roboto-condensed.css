@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('roboto-condensed.eot');
+    src: url('roboto-condensed.eot') format('embedded-opentype'),
+         url('roboto-condensed.woff') format('woff'),
+         url('roboto-condensed.ttf') format('truetype'),
+         url('roboto-condensed.svg#RobotoCondensed') format('svg');
+}

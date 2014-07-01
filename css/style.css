@@ -1,0 +1,356 @@
+body {
+	background: url("../img/dottedbackground.png") repeat rgb(33, 33, 33);
+	font-family: "RobotoCondensed", "Segoe UI", "Deja Vu Sans", "Tahoma", sans-serif;
+
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+
+	height: 150px;
+	width: 450px;
+	top: 20px;
+	left: 20px;
+
+	z-index: 200;
+	transition: top 0.5s, left 0.5s;
+
+	opacity: 0.8;
+}
+
+header .triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 100px 0px 0 80px;
+	border-color: rgb(179,179,179) transparent transparent transparent;
+	position: relative;
+	z-index: 45;
+	top: -1px;
+	transition: all 0.25s;
+	opacity: 1;
+}
+
+header .logo {
+	background-color: rgb(179,179,179);
+	padding: 15px;
+	box-shadow: 0 5px 0 rgba(0,0,0,0.5);
+	display: inline-block;
+	z-index: 40;
+	margin: 0;
+
+	transition: all 0.25s;
+}
+
+header .tabs {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 3;
+}
+
+header .tabs .tab.recherche {
+	background-color: rgb(179,179,179);
+	width: 400px;
+	height: 45px;
+	position: relative;
+	left: -5px;
+	z-index: 2;
+}
+
+header .tabs .tab.recherche input {
+	background-color: rgb(179,179,179);
+	width: 390px;
+	height: 45px;
+	padding-left: 10px;
+	font: inherit;
+	font-size: 20pt;
+	border: none;
+}
+
+header .tabs .tab {
+	position: relative;
+	background-color: rgb(179,179,179);
+	height: 28px;
+	vertical-align: middle;
+	position: relative;
+	left: -17px;
+	z-index: 3;
+	color: black;
+	transition: 0.25s all;
+	font-size: 22px;
+	opacity: 0.4;
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 5px;
+	border-radius: 0 2px 2px 0;
+	/*box-shadow: 3px 3px 0 rgba(0,0,0,0.4);*/
+	z-index: 2;
+}
+
+header .tabs .tab:hover {
+	opacity: 1;
+	left: -5px;
+	text-decoration: underline;
+}
+
+header .tabs .tab a {
+	color: inherit;
+	text-decoration: none;
+	margin-left: 30px;
+	margin-right: 15px;
+}
+
+header .tabs .tab.recherche input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #666;
+}
+
+header .tabs .tab.recherche input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #666;
+    opacity:  1;
+}
+
+header .tabs .tab.recherche input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #666;
+    opacity:  1;
+}
+
+header .tabs .tab.recherche input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #666;
+}
+
+section.lundi {
+	/*margin-top: 800px;*/
+	border-top: 20px solid rgb(0, 51, 128);
+	background: rgba(0,51,128,0.2);
+	text-align: right;
+	z-index: 100;
+	margin-bottom: 0;
+	padding-right: 50px;
+	transition: all 0.5s;
+}
+
+.player {
+	width: 500px;
+	height: 350px;
+	overflow: hidden;
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-right: 5px;
+}
+
+.player .playercontent {
+	box-shadow: 5px 5px 0 rgba(0,0,0,0.5);
+	width: 500px;
+	height: 281px;
+}
+
+.player .pInfo {
+	padding: 0;
+	margin-top: 5px;
+}
+
+.player.MAG img {
+	height: 281px;
+	width: 500px;
+}
+
+section article {
+	min-height: 400px;
+}
+
+section article h3 {
+	font-family: "BebasNeueRegular";
+	font-size: 64px;
+	line-height: 64px;
+	font-weight: normal;
+	text-shadow: 5px 5px 0 rgba(0,0,0,0.5);
+	padding: 0; margin: 0;
+}
+
+section article h3 a {
+	color: inherit!important;
+}
+
+section.lundi h2 {
+	font-size: 220px;
+	text-transform: uppercase;
+	line-height: 220px;
+	text-shadow: 15px 10px 0 rgba(0,0,0,0.6);
+	padding: 0;
+	margin: 0;
+
+	color: rgb(0, 51, 128);
+	position: relative;
+	top: -37px;
+	right: 10px;
+}
+
+section.lundi a {
+	color: rgb(0, 101, 188);
+	text-decoration: none;
+}
+
+section.lundi a:hover {
+	color: rgb(0, 131, 218);
+	text-decoration: underline;
+}
+
+section.mardi {
+	/*margin-top: 800px;*/
+	border-top: 20px solid rgb(255, 204, 0);
+	background: rgba(255,204,0,0.2);
+	text-align: right;
+	z-index: 100;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-right: 50px;
+}
+
+section.mardi h2 {
+	font-size: 220px;
+	text-transform: uppercase;
+	line-height: 220px;
+	text-shadow: 15px 10px 0 rgba(0,0,0,0.6);
+	padding: 0;
+	margin: 0;
+
+	color: rgb(255, 204, 0);
+	position: relative;
+	top: -37px;
+	right: 10px;
+}
+
+section.mardi a {
+	color: rgb(255, 204, 0);
+	text-decoration: none;
+}
+
+section.mardi a:hover {
+	color: rgb(255, 204, 0);
+	text-decoration: underline;
+}
+
+.nom {
+	font-variant: small-caps;
+}
+
+#wrapper {
+	overflow: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+	min-width: 900px;
+  }
+
+  header {
+  	width: 100%;
+  	height: 130px;
+	background-color: rgb(179,179,179);
+	top: 0;
+	left: 0;
+	opacity: 1;
+	box-shadow: 0 5px 1px rgba(0,0,0,0.4);
+  }
+
+  header .logo {
+  	background: none;
+  	box-shadow: none;
+  	width: 100%;
+  	text-align: center;
+  }
+
+  header .logo img {
+  	height: 100px;
+  }
+
+  header .triangle {
+  	display: none;
+  	opacity: 0;
+  }
+
+  section.lundi {
+  	/*margin-top: 130px;*/
+  }
+
+  #wrapper {
+  	overflow: auto;
+  	margin-top: 130px;
+  }
+
+  div#page {
+  }
+
+  header .tabs {
+  	position: absolute;
+  	top: 15px;
+  	z-index: 100;
+  }
+
+  header .tabs .tab {
+  	background: rgb(100, 100, 100);
+  	color: white;
+  }
+}
+
+footer {
+	padding-left: 5px;
+	position: relative;
+	z-index: 100;
+	background: url("../img/dottedbackground2.png") repeat rgb(33, 33, 33);
+	margin: 0;
+	padding: 15px;
+	border-top: 5px solid rgba(0,0,0,0.1);
+}
+
+footer p {
+	margin: 0;
+}
+
+a {
+	color: white;
+}
+
+p.info {
+	font-size: 42px;
+	position: fixed;
+	opacity: 0.2;
+	left: 20px;
+	bottom: 10px;
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+	z-index: 99;
+	margin: 0; padding: 0;
+}
+
+a img {
+	border: none;
+}
+
+acronym {
+	cursor: help;
+}
+
+header:hover .logo { 
+	transform:rotate(1deg) scale(1.05);
+	-ms-transform:rotate(1deg) scale(1.05); /* IE 9 */
+	-webkit-transform:rotate(1deg) scale(1.05);
+}
+header:hover .triangle { 
+	z-index: 400;
+	transform:rotate(1deg) scale(1.05) translate(-10px, 0px);
+	-ms-transform:rotate(1deg) scale(1.05) translate(-10px, 0px); /* IE 9 */
+	-webkit-transform:rotate(1deg) scale(1.05) translate(-10px, 0px);
+}
