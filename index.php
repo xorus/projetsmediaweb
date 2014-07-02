@@ -132,12 +132,15 @@ $days[1] = $db->query('SELECT * FROM `media` WHERE `Show` = "Y" AND `Jour` = 2 O
 	</section>
 	<?php } ?>
 	<footer>
+		<p class="github">
+			<a href="https://github.com/xorus/projetsmediaweb" title="Code source"><img alt="GitHub" src="img/GitHub-Mark-Light-120px-plus.png"></a>
+		</p>
 		<p>
 			<strong>IUT Info Aix</strong> - <acronym title="Vous pouvez retrouver les films dont l'autorisation n'a pas été obtenue à l'Asso">Seuls les films dont les autorisations de ses auteurs respectifs ont été obtenues sont diffusés sur ce site</acronym> - <a href="archive/index.php">Archives</a><br />
 			Site hébergé par <a href="http://xorus.nerdbox.fr/">Josua Gonzalez</a>, un lien mort ? Votre film est absent ? <a href="mailto:jdpepi@gmail.com">Contactez moi</a><br /><br />
 
 			Les films appartiennent (copyright) à leurs auteurs respectifs.<br />
-			Le style et la disposition du site est placé sous licence Creative Commons BY (Josua Gonzalez).
+			Le code source de ce site est placé sous licence GNU GPL v2 (Josua Gonzalez).
 		</p>
 	</footer>
 	</div>

@@ -354,3 +354,24 @@ header:hover .triangle {
 	-ms-transform:rotate(1deg) scale(1.05) translate(-10px, 0px); /* IE 9 */
 	-webkit-transform:rotate(1deg) scale(1.05) translate(-10px, 0px);
 }
+
+.github {
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	width: 90px;
+	height: 90px;
+	opacity: 0.3;
+	transition: 0.5s all;
+}
+
+.github:hover {
+	opacity: 0.8;
+}
+
+.github img {
+	width: 90px;
+}
