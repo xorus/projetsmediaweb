@@ -140,7 +140,7 @@ $days[1] = $db->query('SELECT * FROM `media` WHERE `Show` = "Y" AND `Jour` = 2 O
 			Site hébergé par <a href="http://xorus.nerdbox.fr/">Josua Gonzalez</a>, un lien mort ? Votre film est absent ? <a href="mailto:jdpepi@gmail.com">Contactez moi</a><br /><br />
 
 			Les films appartiennent (copyright) à leurs auteurs respectifs.<br />
-			Le code source de ce site est placé sous licence GNU GPL v2 (Josua Gonzalez).
+			Le code source de ce site est placé sous licence GNU GPL v2 (Josua Gonzalez), le site héberge 16Go de données.
 		</p>
 	</footer>
 	</div>
@@ -154,15 +154,21 @@ $days[1] = $db->query('SELECT * FROM `media` WHERE `Show` = "Y" AND `Jour` = 2 O
 	  videojs.options.flash.swf = "js/lib/video-js/video-js.swf"
 	</script>
 
-	<script>
-	  /* Je sais c'est le diable incarné mais c'est temporaire, en attendant que j'installe mon propre système, genre piwik ou autres */
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-52301192-1', 'auto');
-	  ga('send', 'pageview');
+	<!-- Do Not Track est pris en compte -->
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.nerdbox.fr/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', 2]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+	    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
 	</script>
+	<noscript><p><img src="http://piwik.nerdbox.fr/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
  </body>
 </html>
